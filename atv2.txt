@@ -1,0 +1,57 @@
+programa {
+  funcao inicio() {
+    
+    inteiro vetor[10] = {1,2,3,4,5,6,7,8,9,10}
+    inteiro i, soma = 0
+    real media = 0
+
+    //Recebe os dados
+    // para (i = 0; i < 10; i++)
+    // {
+    //   escreva("passe o valor: ")
+    //   leia(vetor[i])
+    // }
+
+    //Apresenta os numeros ímpares
+    escreva("Elementos impares: ")
+    para (i = 0; i < 10; i++)
+    {
+      se (vetor[i] % 2 != 0)
+      {
+        escreva(vetor[i], " ")
+      }
+    }
+
+    escreva("\n")
+
+    //Apresenta os numeros pares
+    escreva("Elementos pares: ")
+    para (i = 0; i < 10; i++)
+    {
+      se (vetor[i] % 2 == 0)
+      {
+        escreva(vetor[i], " ")
+      }
+    }
+
+    escreva("\n")
+
+    //Apresenta a soma
+    escreva("A soma é: ")
+    para (i = 0; i < 10; i++)
+    {
+      soma = soma + vetor[i]
+    }
+      escreva(soma)
+
+    escreva("\n")
+
+    //Apresenta a media
+    escreva("A media é: ")
+    para (i = 0; i < 10; i++)
+    {
+      media = media + vetor[i]
+    }
+      escreva(media / 10)
+  }
+}
